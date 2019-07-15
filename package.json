@@ -2,7 +2,7 @@
   "name": "netflix-clone",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Petrovski/Netflix-Clone",
+  "homepage": "https://petrovski.github.io/Netflix-Clone/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
