@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Petrovski/Netflix-Clone/static/css/main.71e889fe.chunk.css",
+    "main.js": "/Petrovski/Netflix-Clone/static/js/main.03ef4366.chunk.js",
+    "main.js.map": "/Petrovski/Netflix-Clone/static/js/main.03ef4366.chunk.js.map",
+    "runtime~main.js": "/Petrovski/Netflix-Clone/static/js/runtime~main.b50e50f4.js",
+    "runtime~main.js.map": "/Petrovski/Netflix-Clone/static/js/runtime~main.b50e50f4.js.map",
+    "static/js/2.f0927397.chunk.js": "/Petrovski/Netflix-Clone/static/js/2.f0927397.chunk.js",
+    "static/js/2.f0927397.chunk.js.map": "/Petrovski/Netflix-Clone/static/js/2.f0927397.chunk.js.map",
+    "index.html": "/Petrovski/Netflix-Clone/index.html",
+    "precache-manifest.baa981a429dd7b41e21fac7edca1142c.js": "/Petrovski/Netflix-Clone/precache-manifest.baa981a429dd7b41e21fac7edca1142c.js",
+    "service-worker.js": "/Petrovski/Netflix-Clone/service-worker.js",
+    "static/css/main.71e889fe.chunk.css.map": "/Petrovski/Netflix-Clone/static/css/main.71e889fe.chunk.css.map"
+  }
+}
