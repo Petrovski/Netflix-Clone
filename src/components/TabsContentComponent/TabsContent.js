@@ -5,7 +5,8 @@ class TabsContent extends Component {
 	state = {
 		showCancel: true,
 		showWatch: false,
-		showPrice: false
+		showPrice: false,
+		showAll: false // only added for github change
 	};
 
 	showCancelContent() {
