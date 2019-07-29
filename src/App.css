@@ -140,10 +140,6 @@ img {
 	cursor: pointer;
 }
 
-.tab-border {
-	border-bottom: 4px solid var(--primary-color);
-}
-
 .tab-content {
 	padding: 3rem 0;
 	color: white;

@@ -5,31 +5,39 @@ class TabsContent extends Component {
 	state = {
 		showCancel: true,
 		showWatch: false,
-		showPrice: false,
-		showAll: false // only added for github change
+		showPrice: false
 	};
 
 	showCancelContent() {
-		const { showCancel, showWatch, showPrice } = this.state;
+		const { showWatch, showPrice } = this.state;
 		if (showWatch || showPrice) {
-			this.setState({ showCancel: true });
-			console.log(showCancel);
+			this.setState({
+				showCancel: true,
+				showWatch: false,
+				showPrice: false
+			});
 		}
 	}
 
 	showWatchContent() {
-		const { showCancel, showWatch, showPrice } = this.state;
+		const { showCancel, showPrice } = this.state;
 		if (showCancel || showPrice) {
-			this.setState({ showWatch: true });
-			console.log(showWatch);
+			this.setState({
+				showCancel: false,
+				showWatch: true,
+				showPrice: false
+			});
 		}
 	}
 
 	showPriceContent() {
-		const { showCancel, showWatch, showPrice } = this.state;
+		const { showCancel, showWatch } = this.state;
 		if (showCancel || showWatch) {
-			this.setState({ showPrice: true });
-			console.log(showPrice);
+			this.setState({
+				showCancel: false,
+				showWatch: false,
+				showPrice: true
+			});
 		}
 	}
 
@@ -42,15 +50,24 @@ class TabsContent extends Component {
 							id="tab-1"
 							className="tab-item tab-border"
 							onClick={() => this.showCancelContent()}
+							style={this.state.showCancel ? borderEnabled : borderDisabled}
 						>
 							<i className="fas fa-door-open fa-3x" />
 							<p className="hide-sm">Cancel anytime</p>
 						</div>
-						<div id="tab-2" onClick={() => this.showWatchContent()}>
+						<div
+							id="tab-2"
+							onClick={() => this.showWatchContent()}
+							style={this.state.showWatch ? borderEnabled : borderDisabled}
+						>
 							<i className="fas fa-tablet-alt fa-3x" />
 							<p className="hide-sm">Watch anywhere</p>
 						</div>
-						<div id="tab-3" onClick={() => this.showPriceContent()}>
+						<div
+							id="tab-3"
+							onClick={() => this.showPriceContent()}
+							style={this.state.showPrice ? borderEnabled : borderDisabled}
+						>
 							<i className="fas fa-tags fa-3x" />
 							<p className="hide-sm">Pick your price</p>
 						</div>
@@ -251,6 +268,14 @@ class TabsContent extends Component {
 		);
 	}
 }
+
+const borderEnabled = {
+	borderBottom: '4px solid #e50914'
+};
+
+const borderDisabled = {
+	borderBottom: 'none'
+};
 
 const tabEnabled = {
 	display: 'block'
